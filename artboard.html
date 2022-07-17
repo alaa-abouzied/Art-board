@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artboard</title>
+    <link rel="stylesheet" href="artboard.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="btn">
+        <button onclick="draw()"><img src="draw.png" /></button>
+        <button onclick="circle()"><img src="cir.png" /></button>
+        <button onclick="rect()"><img src="rect1.png" /></button>
+        <button onclick="line()"><img src="line.png" /></button>
+        <button onclick="earse()"><img src="earse.png" /></button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <label for="fillcolor">fill style</label>
+        <br />
+        <input type="color" name="fcolor" id="fillcolor" />
+        <br />
+        <br />
+        <label for="storkcolor">stork style</label>
+        <br />
+        <input type="color" name="stkcolor" id="storkcolor" />
+      </div>
+      <canvas
+        id="my-canvas"
+        width="650px"
+        height="500px"
+        style="border: 3px solid #657eb4"
+      ></canvas>
+    </div>
+
+    <script src="artboard.js"></script>
+  </body>
+</html>
